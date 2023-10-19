@@ -11,13 +11,13 @@
             width: 50px;
             height: 50px;
             margin: 5px;
-            background-color: rgb(211,211,211);
+			background-color:black;
             transition: background-color 1s ease;
             cursor: pointer;
         }
 
         .square:hover {
-            color: blue;
+            color: red;
             transition: color 0.3s ease;
         }
     </style>
@@ -37,12 +37,12 @@
             
             // Add a hover-out listener to revert the background color after 1 second
             box.addEventListener('mouseover', () => {
-                box.style.backgroundColor = 'blue';
+                box.style.backgroundColor = 'red';
             });
 
             box.addEventListener('mouseout', () => {
                 setTimeout(() => {
-                    box.style.backgroundColor = 'lightgray';
+                    box.style.backgroundColor = 'black';
                 }, 1000); // 1 second (1000 milliseconds) delay
             });
         }
